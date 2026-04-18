@@ -1,0 +1,104 @@
+{
+  "request_id": "req-demo-incomplete-001",
+  "generated_at": "2026-04-18T12:10:00Z",
+  "items": [
+    {
+      "id": "opp-incomplete-001",
+      "extraction": {
+        "is_opportunity": true,
+        "opportunity_type": "internship",
+        "title": "Remote Internship at FinTech Labs",
+        "organization": "FinTech Labs",
+        "deadline": null,
+        "eligibility_conditions": [],
+        "required_documents": ["Resume"],
+        "application_contact_info": {
+          "links": [],
+          "emails": ["hr@fintechlabs.io"],
+          "phones": ["+8801700000000"]
+        }
+      },
+      "score_breakdown": {
+        "fit_score": 78,
+        "urgency_score": 40,
+        "completeness_score": 52,
+        "final_score": 63,
+        "weights": {
+          "fit": 0.5,
+          "urgency": 0.3,
+          "completeness": 0.2
+        }
+      },
+      "ranking_reason": "Good domain fit but missing deadline and eligibility details.",
+      "evidence": {
+        "title": [
+          {
+            "snippet": "Remote internship, rolling application.",
+            "source_hint": "email-006"
+          }
+        ]
+      },
+      "action_checklist": [
+        {
+          "task": "Email HR to confirm deadline",
+          "status": "todo"
+        },
+        {
+          "task": "Ask for eligibility requirements",
+          "status": "todo"
+        }
+      ],
+      "warnings": [
+        "Missing deadline",
+        "Eligibility conditions could not be extracted"
+      ]
+    },
+    {
+      "id": "opp-incomplete-002",
+      "extraction": {
+        "is_opportunity": true,
+        "opportunity_type": "other",
+        "title": "Admissions Webinar Reminder",
+        "organization": null,
+        "deadline": null,
+        "eligibility_conditions": [],
+        "required_documents": [],
+        "application_contact_info": {
+          "links": ["https://gradschool.org/webinar"],
+          "emails": [],
+          "phones": []
+        }
+      },
+      "score_breakdown": {
+        "fit_score": 22,
+        "urgency_score": 18,
+        "completeness_score": 34,
+        "final_score": 23,
+        "weights": {
+          "fit": 0.5,
+          "urgency": 0.3,
+          "completeness": 0.2
+        }
+      },
+      "ranking_reason": "Informational event with weak direct opportunity match.",
+      "evidence": {
+        "is_opportunity": [
+          {
+            "snippet": "Join our webinar this Thursday to learn about admissions timelines.",
+            "source_hint": "email-007"
+          }
+        ]
+      },
+      "action_checklist": [
+        {
+          "task": "Attend webinar and note admissions deadlines",
+          "status": "in_progress"
+        }
+      ],
+      "warnings": [
+        "Organization missing",
+        "No eligibility and required documents extracted"
+      ]
+    }
+  ]
+}

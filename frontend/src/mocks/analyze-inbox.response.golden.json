@@ -1,0 +1,154 @@
+{
+  "request_id": "req-demo-golden-001",
+  "generated_at": "2026-04-18T12:00:00Z",
+  "items": [
+    {
+      "id": "opp-001",
+      "extraction": {
+        "is_opportunity": true,
+        "opportunity_type": "scholarship",
+        "title": "AI Scholarship Final Call",
+        "organization": "Future AI Foundation",
+        "deadline": "2026-04-19T23:59:59Z",
+        "eligibility_conditions": [
+          "Undergraduate student",
+          "Has AI-related project or coursework"
+        ],
+        "required_documents": ["CV", "Transcript", "Statement of purpose"],
+        "application_contact_info": {
+          "links": ["https://future-ai-foundation.org/apply"],
+          "emails": ["apply@future-ai-foundation.org"],
+          "phones": []
+        }
+      },
+      "score_breakdown": {
+        "fit_score": 91,
+        "urgency_score": 98,
+        "completeness_score": 93,
+        "final_score": 94,
+        "weights": {
+          "fit": 0.5,
+          "urgency": 0.3,
+          "completeness": 0.2
+        }
+      },
+      "ranking_reason": "Strong match with AI background and immediate deadline.",
+      "evidence": {
+        "deadline": [
+          {
+            "snippet": "Deadline in 24 hours.",
+            "source_hint": "email-008"
+          }
+        ],
+        "eligibility_conditions": [
+          {
+            "snippet": "Eligible students with AI projects are encouraged to apply now.",
+            "source_hint": "email-008"
+          }
+        ]
+      },
+      "action_checklist": [
+        {
+          "task": "Prepare statement of purpose tailored to AI goals",
+          "status": "todo"
+        },
+        {
+          "task": "Upload transcript and CV",
+          "status": "todo"
+        },
+        {
+          "task": "Submit application before midnight",
+          "status": "in_progress"
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "id": "opp-002",
+      "extraction": {
+        "is_opportunity": true,
+        "opportunity_type": "internship",
+        "title": "Google Summer Internship",
+        "organization": "Google",
+        "deadline": "2026-05-20T23:59:59Z",
+        "eligibility_conditions": ["CS students in second year or above"],
+        "required_documents": ["Resume", "Transcript"],
+        "application_contact_info": {
+          "links": ["https://careers.google.com"],
+          "emails": ["careers@google.com"],
+          "phones": []
+        }
+      },
+      "score_breakdown": {
+        "fit_score": 89,
+        "urgency_score": 74,
+        "completeness_score": 95,
+        "final_score": 86,
+        "weights": {
+          "fit": 0.5,
+          "urgency": 0.3,
+          "completeness": 0.2
+        }
+      },
+      "ranking_reason": "High fit and complete application details.",
+      "evidence": {
+        "required_documents": [
+          {
+            "snippet": "Resume and transcript required.",
+            "source_hint": "email-001"
+          }
+        ]
+      },
+      "action_checklist": [
+        {
+          "task": "Update resume with recent projects",
+          "status": "todo"
+        },
+        {
+          "task": "Request updated transcript",
+          "status": "todo"
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "id": "opp-003",
+      "extraction": {
+        "is_opportunity": false,
+        "opportunity_type": "other",
+        "title": null,
+        "organization": "Campus Office",
+        "deadline": null,
+        "eligibility_conditions": [],
+        "required_documents": [],
+        "application_contact_info": {
+          "links": [],
+          "emails": ["noreply@campus.edu"],
+          "phones": []
+        }
+      },
+      "score_breakdown": {
+        "fit_score": 5,
+        "urgency_score": 0,
+        "completeness_score": 20,
+        "final_score": 8,
+        "weights": {
+          "fit": 0.5,
+          "urgency": 0.3,
+          "completeness": 0.2
+        }
+      },
+      "ranking_reason": "Classified as non-opportunity informational email.",
+      "evidence": {
+        "is_opportunity": [
+          {
+            "snippet": "This week cafeteria menu has changed.",
+            "source_hint": "email-004"
+          }
+        ]
+      },
+      "action_checklist": [],
+      "warnings": ["No actionable opportunity fields detected"]
+    }
+  ]
+}

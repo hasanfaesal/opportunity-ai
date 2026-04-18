@@ -1,0 +1,71 @@
+{
+  "profile": {
+    "degree_program": "Computer Science",
+    "semester": 6,
+    "cgpa": 3.61,
+    "skills": ["Python", "Vue.js", "Machine Learning"],
+    "interests": ["AI", "Scholarships", "Research"],
+    "preferred_opportunity_types": ["internship", "scholarship", "fellowship"],
+    "preferred_locations": ["Bangladesh", "Remote", "Singapore"],
+    "financial_need": true,
+    "experience_summary": "Built two student projects and completed one remote internship."
+  },
+  "emails": [
+    {
+      "id": "email-001",
+      "source_type": "paste",
+      "subject": "Google Summer Internship Applications Open",
+      "sender": "careers@google.com",
+      "body": "Apply before May 20. CS students in 2nd year+ are eligible. Resume and transcript required."
+    },
+    {
+      "id": "email-002",
+      "source_type": "paste",
+      "subject": "Merit Scholarship 2026",
+      "sender": "scholarships@uni.edu",
+      "body": "Deadline May 10. Minimum CGPA 3.5. Need transcript, recommendation letter, and statement of purpose."
+    },
+    {
+      "id": "email-003",
+      "source_type": "paste",
+      "subject": "Weekend Coding Competition",
+      "sender": "events@hackleague.org",
+      "body": "Team-based contest this weekend. Registration closes in 2 days."
+    },
+    {
+      "id": "email-004",
+      "source_type": "upload",
+      "subject": "Campus Cafeteria Menu Update",
+      "sender": "noreply@campus.edu",
+      "body": "This week cafeteria menu has changed."
+    },
+    {
+      "id": "email-005",
+      "source_type": "upload",
+      "subject": "Research Fellowship at NUS",
+      "sender": "fellowships@nus.edu.sg",
+      "body": "Apply by June 15. Open for CS and Data Science undergraduates."
+    },
+    {
+      "id": "email-006",
+      "source_type": "paste",
+      "subject": "Internship at FinTech Labs",
+      "sender": "jobs@fintechlabs.io",
+      "body": "Remote internship, rolling application. Contact hr@fintechlabs.io."
+    },
+    {
+      "id": "email-007",
+      "source_type": "paste",
+      "subject": "Admissions Webinar Reminder",
+      "sender": "admissions@gradschool.org",
+      "body": "Join our webinar this Thursday to learn about admissions timelines."
+    },
+    {
+      "id": "email-008",
+      "source_type": "upload",
+      "subject": "Urgent: AI Scholarship Final Call",
+      "sender": "apply@future-ai-foundation.org",
+      "body": "Deadline in 24 hours. Eligible students with AI projects are encouraged to apply now."
+    }
+  ]
+}
