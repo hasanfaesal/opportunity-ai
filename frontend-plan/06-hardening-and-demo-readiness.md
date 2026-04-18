@@ -59,4 +59,4 @@ Ensure the frontend is stable, understandable, and presentation-ready for live j
 - Team has fallback path for unstable backend conditions.
 
 ## Completion Condition
-All six steps are complete when frontend can demonstrate the required outcomes from `overview.md` in both technical and pitch contexts.
+All six steps are complete when frontend can demonstrate the required outcomes from `CONTEXT.md` in both technical and pitch contexts.

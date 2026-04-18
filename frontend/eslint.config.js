@@ -19,6 +19,7 @@ export default defineConfig([
     languageOptions: {
       globals: {
         ...globals.browser,
+        ...globals.node,
         // 添加自动导入的全局变量
         ...autoImportGlobals.globals
       }

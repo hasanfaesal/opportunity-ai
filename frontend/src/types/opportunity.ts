@@ -108,26 +108,6 @@ export interface ApiError {
   details?: Record<string, string | string[]>
 }
 
-export interface RankedOpportunity {
-  opportunity: {
-    is_opportunity: boolean
-    opportunity_type?: string
-    deadline?: string
-    eligibility?: string[]
-    required_docs?: string[]
-    application_link?: string
-    contact_email?: string
-    raw_email: string
-    confidence: number
-  }
-  score: number
-  fit_score: number
-  urgency_score: number
-  completeness_score: number
-  reasoning: string
-  next_steps: string[]
-}
-
 const unknownTypeFallback: OpportunityType = 'other'
 
 export function normalizeOpportunityType(rawType: string | null | undefined): OpportunityType {
@@ -151,4 +131,13 @@ export function normalizeChecklistStatus(rawStatus: string | null | undefined): 
 export function normalizeScore(value: number | null | undefined): number {
   if (typeof value !== 'number' || Number.isNaN(value)) return SCORE_MIN
   return Math.min(SCORE_MAX, Math.max(SCORE_MIN, value))
+}
+
+export function toTitleCaseLabel(value: string | null | undefined, fallback = 'Other'): string {
+  if (!value || typeof value !== 'string') return fallback
+
+  return value
+    .split('_')
+    .join(' ')
+    .replace(/\b\w/g, char => char.toUpperCase())
 }

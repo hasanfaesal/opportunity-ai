@@ -27,3 +27,7 @@ export async function rankOpportunities(opportunities, profile) {
 export async function extractAndRank(emails, profile) {
   return oppService.post('/api/v1/opportunities/extract-rank', { emails, profile })
 }
+
+export async function postAnalyzeInbox(requestPayload, { signal } = {}) {
+  return oppService.post('/api/v1/opportunities/analyze-inbox', requestPayload, { signal })
+}

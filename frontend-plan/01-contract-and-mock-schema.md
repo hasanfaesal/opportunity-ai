@@ -90,7 +90,7 @@ Create fixtures for at least:
 ## Acceptance Criteria
 - Frontend can render full flow using only mock data.
 - No component needs undocumented fields.
-- Contract supports all required outputs from `overview.md`.
+- Contract supports all required outputs from `CONTEXT.md`.
 - At least two edge-case fixtures render without UI crash.
 
 ## Handoff to Step 2

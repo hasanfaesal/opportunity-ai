@@ -4,7 +4,7 @@
 Make ranking transparent and actionable so users and judges can trust decisions and understand what to do next.
 
 ## Why this step matters
-- `overview.md` emphasizes deterministic ranking and evidence-backed reasons.
+- `CONTEXT.md` emphasizes deterministic ranking and evidence-backed reasons.
 - This is a key scoring differentiator in demo and rubric alignment.
 
 ## Scope
