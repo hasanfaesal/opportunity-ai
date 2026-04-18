@@ -1,5 +1,5 @@
 <script setup>
-import { useRouter } from 'vue-router'
+import { RouterLink, useRouter } from 'vue-router'
 
 const router = useRouter()
 
@@ -7,53 +7,18 @@ const goBack = () => {
   router.go(-1)
 }
 
-const goHome = () => {
-  router.push('/')
-}
 </script>
 
 <template>
-  <div class="not-found-page">
-    <div class="content">
+  <div class="site-shell not-found-wrap">
+    <div class="not-found-card">
+      <p class="eyebrow">Not found</p>
       <h1>404</h1>
-      <p>抱歉，您访问的页面不存在</p>
-      <div class="actions">
-        <a-button @click="goBack" type="outline">返回上一页</a-button>
-        <a-button @click="goHome" type="primary">回到首页</a-button>
+      <p>Sorry, this page does not exist or was moved.</p>
+      <div class="not-found-actions">
+        <button class="btn-secondary" @click="goBack">Go Back</button>
+        <RouterLink class="btn-primary" to="/">Go Home</RouterLink>
       </div>
     </div>
   </div>
 </template>
-
-<style scoped>
-.not-found-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-}
-
-.content {
-  text-align: center;
-}
-
-h1 {
-  font-size: 72px;
-  font-weight: 700;
-  margin-bottom: 16px;
-  color: var(--color-text-1);
-}
-
-p {
-  font-size: 20px;
-  margin-bottom: 32px;
-  color: var(--color-text-2);
-}
-
-.actions {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-}
-</style>

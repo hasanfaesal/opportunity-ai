@@ -1,10 +1,41 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import LandingPage from '@/views/LandingPage.vue'
+import FeaturesPage from '@/views/FeaturesPage.vue'
+import PricingPage from '@/views/PricingPage.vue'
+import AboutPage from '@/views/AboutPage.vue'
+import ContactPage from '@/views/ContactPage.vue'
 import InputPage from '@/views/InputPage.vue'
 import ResultsPage from '@/views/ResultsPage.vue'
+import NotFoundPage from '@/views/NotFoundPage.vue'
 
 const routes = [
   {
     path: '/',
+    name: 'Home',
+    component: LandingPage
+  },
+  {
+    path: '/features',
+    name: 'Features',
+    component: FeaturesPage
+  },
+  {
+    path: '/pricing',
+    name: 'Pricing',
+    component: PricingPage
+  },
+  {
+    path: '/about',
+    name: 'About',
+    component: AboutPage
+  },
+  {
+    path: '/contact',
+    name: 'Contact',
+    component: ContactPage
+  },
+  {
+    path: '/input',
     name: 'Input',
     component: InputPage
   },
@@ -39,7 +70,8 @@ const routes = [
     : []),
   {
     path: '/:pathMatch(.*)*',
-    redirect: '/'
+    name: 'NotFound',
+    component: NotFoundPage
   }
 ]
 
